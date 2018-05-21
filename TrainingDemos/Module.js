@@ -32,6 +32,7 @@ res.push("<ul>");
 for(i=0;i<Groceries.length;i++)
 {
 	res.push("<li>" + Groceries[i] + "</li>");
+	console.log(res.join());
 }
 
 res.push("</ul>");

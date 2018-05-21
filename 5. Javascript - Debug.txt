@@ -1,0 +1,29 @@
+#############################################
+Javascript Debug
+#############################################
+
+Console.Log:
+
+console.log is used to write the values to browser console, to view console inspect element and click console tab
+
+Look at coding examples
+
+Breakpoints:
+
+Through coding(debugger), write keyword debugger anywhere where you want to start debugging from
+use step over, step into, step out and resume from the developer tools
+
+Through developer tools: set the breakpoint in the developer tools to stop execution for debugging
+
+
+Using Console:
+
+Using console to verify the objects by typing the object name in the console
+
+Utilities:
+
+Watch expression can be set to view objects
+
+Call Stack can be used to identify flow of control
+
+Global - JS has only one global object which is window, where it will display all the properties and methods
