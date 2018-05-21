@@ -1,0 +1,54 @@
+#############################################
+Javascript Arrays
+#############################################
+
+Arrays:
+
+Creating Arrays:
+
+Just like object, Arrays are declared within square braces as 
+
+var a = [];
+a[0]="Dhana";
+a[1]="Mani";
+
+Arrays can be multi-type.
+
+Accessing Arrays:
+
+
+var a = [];
+a[0]="Dhana";
+a[1]="Mani";
+
+for(i=0; i<a.length; i++)
+{
+   alert(a[i]);
+}
+
+Concat and Slice:
+
+Concat is used to concat elements in two arrays or string etc
+
+Slice is used to split elements in arrays or string etc.
+
+
+Push and Pop:
+
+Push is used to add a new element to the end of array
+Pop is used to remove last added element and return it.
+
+Shift and Unshift:
+
+Unshift is used to push new element to the start of array
+Shift is used to remove first element from the array and return it.
+
+Join and Split:
+
+Join - Concatenate the array element as a string
+str.split - Splits the string as array
+
+Locating the element:
+
+indexOf: search an element in the array and return its index, if element is not found -1 is returned
+lastIndexOf - search an element in the array in reverse order and return its index

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Title>Module pattern sample</Title>
+		<meta name="Author" content="Astute Business Logics Ltd"/>
+		<meta name="Keywords" content="HTML, CSS, JavaScript"/>
+		<script type="text/javascript" src="Module.js">
+		</script>
+		<script>
+			window.onload = function(){
+				document.getElementById("btnClick").onclick = function(){
+					ModuleCodeSample.Init("Dhana Mani", 34);
+					ModuleCodeSample.Display();
+				}
+			}
+		</script>
+	</head>
+	<body>
+	   <p id="pModule"></p>
+	   <p id="pGroceries"></p>
+	   <p id="pGroceriesConcat"></p>
+	   <p id="pGroceriesSlice"></p>
+		<button id="btnClick">Click Me</button>
+		<button id="btnShowGroceries" onclick="ShowList()">Show Groceries</button>
+		<button id="btnShowConcat" onclick="Collectiva.array.ShowConcat()">Show Concat</button>
+		<button id="btnShowSlice" onclick="Collectiva.array.ShowSlice()">Show Slice</button>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+#############################################
+Javascript Objects
+#############################################
+
+Objects:
+
+Objects can be created in two ways
+
+new Object() way
+
+var x =new object() // This way of declaring objects is decommisioned
+
+Object Literal way 
+
+var x = {};
+
+Object Properties:
+
+Objects have properties and methods
+
+Object properties can be defined on the fly like below, similar to CSS name value pair except ; is not used between properties in javascript
+To use reserved keyword use them within speech marks
+var x = {};
+x.Name="Dhana";
+x.Age=35;
+
+var y={
+       Name:"Dhana",
+       Age:35,
+       "class":"Distinction"
+}
+
+alert("Class:" + y.class);
+
+Adding method to Object:
+
+In JS methods are created as anonymous functions, with a name assigned to it
+var x = {};
+x.Name="Dhana";
+x.Age=35;
+
+x.toString = function(){
+  return this.Name + ", " + this.Age;
+};
+
+var y={
+       Name:"Dhana",
+       Age:35,
+       "class":"Distinction"
+	toString : function(){
+  		return this.Name + ", " + this.Age;
+		};
+	}
+
+Module Pattern:
+
+If multiple JS files are included in a document there are chances that object properties and method names can cross over
+so its best to create modularity using module pattern. where closure function are declared with properties and method
+and assigned to function variable, and in the html document it can be referenced using the function variable,.
+
