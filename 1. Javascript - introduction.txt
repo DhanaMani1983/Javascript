@@ -1,0 +1,14 @@
+#############################################
+Javascript Introduction
+#############################################
+
+Javascript:
+
+Javascript is a browser language, To convert html/css into rich client application use client side scripting language Javascript
+Browser language, client side scripting
+Developed by Netscape Navigator, rich experience for users
+Microsoft introduced JScript
+Netscape introduced standard called ECMA script
+Used in Serverside also
+Object Oriented
+Dynamic Scription Language - can create objects at runtime.

@@ -1,0 +1,104 @@
+#############################################
+Javascript fundamentals
+#############################################
+
+Comments and Variables:
+
+// use for single line comment eg: //this is a single line comment
+/* */ for multi line comment eg:/* This is multi line comment */
+
+var keyword is used to declare variables, types are not defined for variables
+var a,b,c;
+a=1;
+b="Dhana Mani";
+c=new Date();
+
+Hello World:
+
+Alert function can be used to display dialog
+
+document.write("Hello World"); body of HTML is called document where we can write using document.write.
+
+Hello World from External File:
+
+External Javascript File: 
+
+To view source, right click inspect element and view sources tab to view document source
+
+Functions:
+
+Function Declaration
+
+Function keyword followed by name of the funtion with paranthesis and then open close curly braces
+
+In html 5 declare external js file and script tags as below 
+
+<script type="text/javascript" src="JS_Fundamentals.js">
+</script>
+<script>
+	Hello(new Date());
+</script>
+
+function HelloWorld()
+{
+   var x= "Javascript Function";
+   document.write("Hello " + x + "!");
+}
+
+Function Parameters:
+Pass parameter name within function, as below
+
+function Hello(todayDate)
+{
+  document.write("Good Morning Dhana! Current Date Time is" + todayDate);
+}
+
+
+Function Call:
+Call js function as below
+<script>
+	Hello(new Date());
+</script>
+
+
+Anonymous Function:
+
+If you create a function without name then it is anonymous function
+
+function as a variable:
+
+you can assign a function to a variable and use the function variable anywhere within the document as
+
+var Hello2 = function()
+{
+	alert("I am from function2");
+}
+
+It is mainly used for event binding, where function is used for event listener
+
+window.onload=function()
+{
+        //binding click event of button
+	document.getElementById("").onclick =
+		function()
+			{
+				alert("Hello I am from button click!");
+			}
+}
+
+Function and Variable Scope:
+Global Variable : variable outside functions are known as global variable and can be used in any functions
+Privare Variable : Varible declared within a function has scope of local variable and cannot be used outside the function.
+
+Closure:
+
+Function within function:
+
+function within function is known as closure function, one can declare variable and use within closure function where values can retained
+
+window.onload = function(){
+var LoadTime = new Date();
+document.getElementById("btnClick").onclick= function(){
+		alert("I am from button click!!! Load time is:" + LoadTime);
+	}	
+}
